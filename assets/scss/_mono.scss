@@ -5,15 +5,16 @@
      Mono Color Light
 -------------------------*/
 .mono{
-   .header nav .nav-pills a.active, .header nav a:hover {
-      color: #101010 !important;
-   }
-  .testimonial .testimonial-item::before {
-   color: #3c3c3c;
-   }
-   header .navbar-brand span,  header .navbar-brand b, .menu li a, .pill-button,
-   .language-skill ul li i
-   {
+    #pp-nav li .active span, #pp-nav li:hover span, .follow-label:before, .border-style {
+        background-color: map-get($map: $bg-colors, $key: bg-dark) !important;
+    }
+    .overlay-menu a:hover{
+        color: map-get($map: $colors, $key: base-mono-dark) !important;
+    }
+    .social a:hover{
+        color: map-get($map: $colors, $key: black-dark) !important;
+    }
+   .pill-button{
       color: map-get($map: $colors, $key: secondary-dark);
    }
    .base-color{
@@ -23,6 +24,9 @@
    .testimonial .owl-dot.active span
    {
       background-color: map-get($map: $bg-colors, $key: bg-black-dark) !important;
+   }
+   .hero-social li a:hover, .blog-link a:hover{
+      color: map-get($map: $colors, $key: black-dark) !important;
    }
    .timeline-icon {
       border: 1px solid map-get($map: $colors, $key: secondary-dark) ;
@@ -37,44 +41,47 @@
    .skill-box .fill-skillbar{
       background-color:map-get($map: $bg-colors, $key: bg-black-dark);
    }
+   .portfolio .portfolio-icon button i, .portfolio .portfolio-icon a i, .portfolio .portfolio-filter li a  {
+        color: map-get($map: $colors, $key: secondary-dark);
+    }
    .portfolio .portfolio-item-content::before{
       background-color: rgba($color: map-get($map: $bg-colors, $key: bg-black-dark), $alpha: 0.9);
   }  
   .loader {
-   border-top: 4px solid map-get($map: $colors, $key: secondary-dark) !important;
+        border-top: 4px solid map-get($map: $colors, $key: secondary-dark) !important;
    }
    .menu-toggler span{
       background-color:map-get($map: $bg-colors, $key: bg-black-dark);
    }
-   .floating{
-      background: map-get($map: $bg-colors, $key: bg-dark);
+   .contact .form-item .form-control{
+        color: map-get($map: $colors, $key: secondary-dark);
    }
-  .circle-2{
-   background: map-get($map: $bg-colors, $key:  bg-black-dark);
-   }
-   .circle{
-      background: map-get($map: $bg-colors, $key: secondary-bg-dark);
-   }
-   .follow-label::before{
-      background:map-get($map: $bg-colors, $key: bg-black-dark) !important;
+   .hero-03{
+      .circle{
+          background: map-get($map: $bg-colors, $key: secondary-bg-dark);
+      }
+      .circle-2{
+         background: map-get($map: $bg-colors, $key: bg-black-dark);
+      }
+      .floating{
+         background: map-get($map: $bg-colors, $key: bg-dark);
+      }
    }
 }
 /*-------------------------
       Mono Color Dark
 -------------------------*/
 .mono.arshia-dark{
-   .header nav .nav-pills a.active, .header nav a:hover {
-      color: #fff!important;
-   }
-  .testimonial .testimonial-item::before {
-   color: #fafafa;
-   }
+    #pp-nav li .active span, #pp-nav li:hover span, .follow-label:before, .border-style {
+        background-color: map-get($map: $bg-colors, $key: secondary-bg-dark) !important;
+    }
+    .social a:hover{
+        color: map-get($map: $colors, $key: secondary-light) !important;
+    }
    .text-white{
       color: map-get($map: $colors, $key: secondary-dark) !important;
    }
-   header .navbar-brand span,  header .navbar-brand b, .menu li a, .pill-button,
-   .language-skill ul li i
-   {
+   .pill-button{
       color: map-get($map: $colors, $key: light);
    }
    .base-color{
@@ -121,20 +128,48 @@
    .portfolio .portfolio-icon button, .portfolio .portfolio-icon a {
       background-color: map-get($map: $bg-colors, $key: bg-black-dark);
    }
+   .portfolio .portfolio-icon button i, .portfolio .portfolio-icon a i, .portfolio .portfolio-filter li a  {
+    color: map-get($map: $colors, $key: light);
+    }
    .menu-toggler span{
       background-color:map-get($map: $bg-colors, $key: bg-lighter);
-   }
-   .floating{
-      background: map-get($map: $bg-colors, $key: secondary-bg-light);
-   }
-  .circle-2{
-   background: map-get($map: $bg-colors, $key:  bg-mono-dark);
-   }
-   .circle{
-      background: map-get($map: $bg-colors, $key: secondary-bg-dark);
    } 
-   .follow-label::before{
-      background:map-get($map: $bg-colors, $key: bg-lighter) !important;
+   .contact .form-item .form-control{
+    color: map-get($map: $colors, $key: light);
+   }
+   .hero-03{
+      .circle{
+          background: map-get($map: $bg-colors, $key: secondary-bg-dark);
+      }
+      .circle-2{
+         background: map-get($map: $bg-colors, $key: bg-mono-dark);
+      }
+      .floating{
+         background: map-get($map: $bg-colors, $key: secondary-bg-light);
+      }
    } 
-   
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        

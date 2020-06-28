@@ -7,44 +7,43 @@ body {
   text-align: right !important;
 }
 
-.rtl .mfp-counter {
-  direction: ltr;
+.overlay-menu .overlay-menu-list .overlay-nav > ul {
+  float: right;
 }
 
-.navbar-nav {
-  margin-right: auto !important;
-  margin-left: inherit !important;
-}
-
-.navbar-brand {
-  direction: ltr;
-}
-
-ul {
-  padding-right: 0;
-}
-
-.color-switcher .pallet-button {
-  left: inherit;
-  right: 0;
-  border-radius: 1rem 0 0 1rem;
-}
-
-.color-switcher .color-pallet {
-  left: inherit;
-  right: 25px;
-  border-radius: 16px 0 16px 16px;
-}
-
-.color-scheme {
+.overlay-menu-toggler {
+  left: 24px;
   right: inherit;
-  left: 0;
-  border-radius: 0 1rem 1rem 0;
 }
 
-.color-scheme i {
-  transform: rotateY(180deg);
-  display: inline-block;
+.overlay-nav .list-inline-item:not(:last-child) {
+  margin-right: inherit;
+  margin-left: 0.5rem !important;
+}
+
+#pp-nav li .pp-tooltip {
+  transform: translateY(0);
+  padding-right: inherit;
+  padding-left: 1rem;
+}
+
+#pp-nav li .active span {
+  transform: translateX(0);
+}
+
+#pp-nav li .active ~ .pp-tooltip {
+  padding-right: inherit;
+  padding-left: 1.5rem;
+}
+
+#pp-nav.left {
+  left: 27px;
+}
+
+.logo {
+  margin-left: inherit;
+  margin-right: 14px;
+  direction: ltr;
 }
 
 .social-box {
@@ -61,34 +60,44 @@ ul {
   direction: ltr;
 }
 
-.services-icon {
-  float: right !important;
+.rtl .mfp-counter {
+  direction: ltr !important;
 }
 
-.services .services-content {
-  padding-right: 3rem !important;
-  padding-left: inherit !important;
+ul {
+  padding-right: 0;
 }
 
-.services.colorfull-service .services-content {
-  padding-right: 4rem  !important;
-  padding-left: inherit !important;
-}
-
-.testimonial .testimonial-item::before {
-  left: 30px;
+.color-scheme {
+  left: 31px;
   right: inherit;
 }
 
-.testimonial .image-border {
-  margin-right: inherit;
-  margin-left: 16px;
+.color-scheme i {
+  transform: rotateY(180deg);
+  display: inline-block;
 }
 
-.contact .contact-info i {
-  margin-right: inherit;
-  margin-left: 0.5rem;
-  float: right !important;
+.color-switcher .pallet-button {
+  left: inherit;
+  right: 0;
+  border-radius: 16px 0 0 16px;
+}
+
+.color-switcher .color-pallet {
+  right: 25px;
+  left: inherit;
+  border-radius: 16px 0 0 16px;
+}
+
+.hero-01 {
+  background: url("http://placehold.it/1920x1280") no-repeat;
+  background-size: cover;
+}
+
+.hero-06 .square {
+  right: -10px;
+  left: inherit;
 }
 
 .hero-social .list-inline-item:not(:last-child) {
@@ -99,6 +108,20 @@ ul {
 .personal-item ~ .button-border {
   margin-left: 1.5rem;
   margin-right: inherit !important;
+}
+
+.services-icon {
+  float: right !important;
+}
+
+.services .services-content {
+  padding-right: 3rem  !important;
+  padding-left: inherit !important;
+}
+
+.services.colorfull-service .services-content {
+  padding-right: 4rem  !important;
+  padding-left: inherit !important;
 }
 
 .resume h3 i {
@@ -156,6 +179,23 @@ ul {
   float: right;
 }
 
+.language-skill ul {
+  text-align: left !important;
+}
+
+.language-skill i {
+  transform: rotateY(180deg);
+  display: inline-block;
+}
+
+.language-skill .list-inline-item:not(:last-child) {
+  margin-right: inherit;
+}
+
+.language-skill .list-inline-item {
+  margin-left: 0.5rem;
+}
+
 .portfolio .portfolio-icon button i {
   left: inherit;
   right: -2px;
@@ -202,23 +242,16 @@ ul {
     left: -50px;
     right: inherit;
   }
-  .menu-toggler {
-    right: 25px;
-    left: inherit;
+}
+
+@media (max-width: 1199px) and (max-width: 767px) {
+  .overlay-menu-toggler {
+    right: inherit;
+    left: 0.5rem;
   }
-  .menu-toggler.open {
-    right: 105px;
-    left: inherit;
-  }
-  header {
-    right: -90px;
-  }
-  header.open {
-    right: 0;
-    left: inherit;
-  }
-  #main > section {
-    padding-right: 0;
+  .color-scheme {
+    right: inherit;
+    left: 15px;
   }
 }
 /*# sourceMappingURL=rtl-main.css.map */
